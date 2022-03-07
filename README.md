@@ -22,22 +22,27 @@ Antes de começar, você vai precisar ter instalado em sua máquina as seguintes
 Além disto é bom ter um editor para trabalhar com o código como [VSCode](https://code.visualstudio.com/)
 
 ### 🎲 Rodando o Projeto 
+Primeiro extraia os arquivos do projeto zipado em um pasta no seu sistema de sua preferência.
+
+Abra o editor de texto Vscode. Clique em "File" e depois em "Open Folder" e selecione o pasta em que o projeto foi descompactado. 
+
+Para usar o Angular CLI, você precisa ter o Node.js e o NPM em seu sistema.
+
+Sendo que o NPM vem junto com a instalação do Node.js…
+
+Caso ainda não possua o Node.js, você pode adquirir https://nodejs.org/en/.
+
+Após a instalação, você está pronto para obter o Angular CLI através do NPM (Gerenciador de Pacotes do Node). Basta abrir o terminal e executar:
+
 
 ```bash
-# Clone este repositório
-$ git clone <https://github.com/tgmarinho/nlw1>
-
-# Acesse a pasta do projeto no terminal/cmd
-$ cd nlw1
-
-# Vá para a pasta server
-$ cd server
-
-# Instale as dependências
-$ npm install
-
-# Execute a aplicação em modo de desenvolvimento
-$ npm run dev:server
-
-# O servidor inciará na porta:3333 - acesse <http://localhost:3333>
+$ npm install -g @angular/cli
 ```
+No Windows, você executa o prompt como administrador E no Linux / MacOS, acrescente sudo ao inicio do comando.
+
+Para iniciar o aplicativo Angular, vamos utilizar o ng serve dentro do diretório raiz do projeto
+
+```bash
+$ ng serve
+```
+O ng serve executa um servidor local que disponibiliza sua aplicação em http://localhost:4200 (por padrão). Pronto é só clicar no link!
